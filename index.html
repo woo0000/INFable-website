@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>W concept</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+window.addEventListener("load", function(){
+	let swiper = new Swiper(".mySwiper", {
+		loop: true,
+		autoplay: { // added
+			delay: 5000
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			type: "progressbar",
+		},
+    });
+
+	let prevBtn=document.querySelector(".prev");
+	let nextBtn=document.querySelector(".next");
+
+	prevBtn.addEventListener("click", function(e){
+		e.preventDefault();
+		swiper.slidePrev();
+	});
+
+	nextBtn.addEventListener("click", function(e){
+		e.preventDefault();
+		swiper.slideNext();
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="header">
+	<div class="top">
+		<div class="sns">
+			<ul>
+				<li><a href=""><img src="images/social_icon1.gif" alt="social_icon1"></a></li>
+				<li><a href=""><img src="images/social_icon2.gif" alt="social_icon2"></a></li>
+				<li><a href=""><img src="images/social_icon3.gif" alt="social_icon3"></a></li>
+			</ul>
+		</div>
+		<div class="logo"><h1><a href=""><img src="images/logo.png" alt="logo"></a></h1></div>
+	</div>
+	<nav>
+		<ul>
+			<li>
+				<a href="">ABOUT</a>
+				<ul>
+					<li><a href="">LIFE</a></li>
+					<li><a href="">RERATIONSHIP</a></li>
+					<li><a href="">BIOGRAPHY</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">GALLERY</a>
+				<ul>
+					<li><a href="">PORTRAIT</a></li>
+					<li><a href="">LANDSCAPE</a></li>
+					<li><a href="">STILL LIFE</a></li>
+					<li><a href="">DRAWINGS</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">EXHIBITION</a>
+				<ul>
+					<li><a href="">INTERNAL</a></li>
+					<li><a href="">ABROAD</a></li>
+					<li><a href="">FINISHED</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">NOTICE</a>
+			</li>
+		</ul>
+	</nav>
+</div>	
+<div class="slider">
+	<div class="swiper mySwiper">
+		<div class="container">
+			<h3>
+				Oscar- <br>
+				Claude Monet
+			</h3>
+			<div class="button"><a href="">작품 보러가기</a></div>
+			<p>
+				1840  11  14 - 1926  12  05
+			</p>
+			<div class="controller"><!-- added -->
+				<ul>
+					<li><a href="" class="prev">previous</a></li>
+					<li><a href="" class="next">next</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide"><img src="images/slider1.jpg" alt="slider1"></div>
+		  <div class="swiper-slide"><img src="images/slider2.jpg" alt="slider2"></div>
+		  <div class="swiper-slide"><img src="images/slider3.jpg" alt="slider3"></div>
+		  <div class="swiper-slide"><img src="images/slider4.jpg" alt="slider4"></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	  </div>
+</div>
+<div class="intro">
+	<div class="bg">
+		<img src="images/intro.png" alt="intro">
+		<div class="content">
+			<div class="title">
+				<h2>
+					Introdution to <br>
+					Monet Gallery
+				</h2>
+			</div>
+			<div class="image"><img src="images/intro_in.png" alt="intro_in"></div>
+			<div class="text">
+				<strong>프랑스 인상파 화가 모네의 갤러리</strong>
+				<p>
+					‘빛은 곧 색채’라는  인상주의 원칙을 <br>
+					끝까지 고수한 모네의 연작을 비롯하여 <br>
+					다양한 작품을 통해, 동일한 대상이 <br>
+					빛의 변화에 따라 어떻게 시각적으로 <br>
+					변용되는지를 탐구하는 과정을 담고 있다.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main">
+	<div class="banner1">
+		<ul>
+			<li>
+				<div class="image"><img src="images/buttero.jpg" alt="buttero"></div>
+				<a href="">
+					<div class="title">
+						<h3>About</h3>
+						<strong>모네의 삶에 대하여</strong>
+					</div>
+					<p>
+						He remained the <br>
+						last survivor of Impressionism, <br>
+						showing how far it could go.
+					</p>
+					<span>view more</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="title">
+						<h3>Gallery</h3>
+						<strong>모네의 작품을 따라서</strong>
+					</div>
+					<p>
+						The basis of impressionism was <br>
+						art traditions such as romantic art colors, <br>
+						realist attitudes of landscape artists, <br>
+						and modern themes.
+					</p>
+					<span>view more</span>
+				</a>
+				<div class="image"><img src="images/atclip.jpg" alt="atclip"></div>
+			</li>
+		</ul>
+	</div>
+	<div class="banner2">
+		<ul>
+			<li>
+				<div class="image">
+					<img src="images/heich.jpg" alt="">
+					<div class="text">
+						<p>Claude Monet (French, 1840-1926)</p>
+						<h3>
+							Peupliers au bord de l’Epte, <br>
+							automne (1891)
+						</h3>
+						<a href="" class="span">view more</a>
+					</div>
+				</div>
+				<a href="">
+					<div class="frame"><img src="images/new.png" alt="new">
+						<div class="content">
+							<h3>Exhibition</h3>
+							<p>모네와 관련된 전시 정보를 전달합니다.</p>
+							<span>view more</span>
+						</div>
+					</div>	
+				</a>
+			</li>
+			<li>
+				<a href="" class="textbox">
+					<img src="images/blank.png" alt="blank">
+					<div class="inner">
+						<h3>Notice</h3>
+						<p>전 세계의 모네와 관련된 정보를 알려드립니다.</p>
+						<span>view more</span>
+					</div>
+				</a>
+				<div class="image">
+					<div class="text">
+						<p>Claude Monet (French, 1840-1926)</p>
+						<h3>
+							Pond with <br>
+							Water Lilies (1907)
+						</h3>
+						<a href="" class="span">view more</a>
+					</div>
+					<img src="images/mimic.jpg" alt="mimic">
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<footer>
+	<div class="inner">
+		<div class="top">
+			<span>해당 웹사이트를 구상하는 모든 이미지는 Claude Monet의 작품임을 안내드립니다.</span>
+		</div>
+		<div class="sns">
+			<ul>
+				<li><a href=""><img src="images/facebook_ot.png" alt="facebook_ot"></a></li>
+				<li><a href=""><img src="images/blog_ot.png" alt="blog_ot"></a></li>
+				<li><a href=""><img src="images/kakao_ot.png" alt="kakao_ot"></a></li>
+			</ul>
+		</div>
+		<div class="copyright">copyright(c) 2025 Claude Monet all rights reserved.</div>
+	</div>
+</footer>
+</body>
+</html>
