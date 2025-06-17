@@ -24,11 +24,15 @@ body{
 	margin: 0;
 	padding: 0;
 	overflow-y: hidden;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Noto Sans KR", sans-serif;
 	font-size: 1em;
 	color: #555;
 	overflow-x: hidden;
 }
+h1, h2, h3 {
+	font-family: "Orbitron", sans-serif;
+}
+
 /* header */
 header{
 	position: absolute;
@@ -48,7 +52,9 @@ header.fixed{
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);  
 	z-index: 1000;
 }
 header.fixed .logo{
@@ -81,6 +87,8 @@ header nav > ul{
 	flex-wrap: nowrap;
 }
 header nav > ul > li > a{
+	font-family: "Orbitron", sans-serif;
+	font-weight: 400;
 	display: inline-block;
 	position: relative;
 	padding: 0 30px;
@@ -97,11 +105,11 @@ header nav > ul > li > a::after{
 	left: 15px;
 	width: 0%;
 	height: 3px;
-	background-color: #2865FF;
+	background-color: #fff;
 	transition: 0.2s ease-out;
 }
 header nav > ul > li > a:hover{
-	color: #2865FF;
+	color: #fff;
 	font-weight: 600;
 }
 header nav > ul > li > a:hover::after{
@@ -116,7 +124,7 @@ header nav > ul > li > a:hover::after{
 }
 header.active .sub_menu li a{
 	opacity: 1;
-	color: #aeaeae;
+	color: #fff;
 }
 header.active .sub_menu li a:hover{
 	color: #000;
@@ -567,7 +575,7 @@ header.active .sub_menu li a:hover{
 	bottom: -350px;
 	width: 100%;
 	height: 350px;
-	background-color: #EBEBE6;
+	background-color: #080d2a;
 }
 /* footer top */
 #page4 .footer .top{
@@ -628,9 +636,9 @@ header.active .sub_menu li a:hover{
 #page4 .footer .bottom .ft_logo{
 	text-indent: -9999px;
 	overflow: hidden;
-	width: 177px;
-	height: 20px;
-	background-image: url(../images/logo_black.png);
+	width: 150px;
+	height: 25px;
+	background-image: url(../images/logo.png);
 	background-repeat: no-repeat;
 	margin-bottom: 20px;
 }
@@ -641,11 +649,14 @@ header.active .sub_menu li a:hover{
 	letter-spacing: 0.5px;
 	margin-bottom: 20px;
 }
+#page4 .footer .bottom ul li{
+	color: #fff;
+}
 #page4 .footer .bottom ul li:first-child{
-	color: #000;
+	color: #ffffff;
 }
 #page4 .footer .bottom p{
-	color: #8B8E94;
+	color: #ffffff;
 }
 #page4 .footer .bottom .right{
 	font-size: 1.25em;
