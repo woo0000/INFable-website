@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: GSAP Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8.0.0/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+<script src="js/ismobile.js"></script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="inner">
+			<div class="logo"><h1><a href="">logo</a></h1></div>
+			<nav>
+				<ul>
+					<li>
+						<a href="">HERITAGE</a>
+						<ul class="sub_menu">
+							<li><a href="">HISTORY</a></li>
+							<li><a href="">PHILOSOPHY</a></li>
+							<li><a href="">THE ESSENTIAL</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">BRANDS</a>
+						<ul class="sub_menu">
+							<li><a href="">MEN</a></li>
+							<li><a href="">LADIES</a></li>
+							<li><a href="">KIDS</a></li>
+							<li><a href="">ACCESSORY</a></li>
+							<li><a href="">GOLF</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">JOURNAL</a>
+						<ul class="sub_menu">
+							<li><a href="">BRAND STORY</a></li>
+							<li><a href="">COLLABORATION</a></li>
+							<li><a href="">STYLE SNAPS</a></li>
+							<li><a href="">CLASSIC MASTERY</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">GOOD ACTIVITY</a>
+						<ul class="sub_menu">
+							<li><a href="">GOOD CARE</a></li>
+							<li><a href="">GOOD CYCLE</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+		<section id="main" class="main_area">
+			<div class="main_slider">
+				<div class="swiper-container mainSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="text">
+								<div class="text_inner">
+									<h2>We Make Information Able</h2>
+									<p>새롭게 설레이는 계절, 빈폴멘 새로운 룩 바라보기</p>	
+								</div>
+							</div>
+							<div class="bg"><img src="images/main1.jpg" alt="main1"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="text">
+								<div class="text_inner">
+									<h2>SEOUL WORKS</h2>
+									<p>서울과 닮은, 서울을 담은 워크웨어</p>	
+								</div>
+							</div>
+							<div class="bg"><img src="images/main2.jpg" alt="main2"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="text">
+								<div class="text_inner">
+									<h2>GOOD CARE</h2>
+									<p>생활 속 유용한 니트 관리팁</p>	
+								</div>
+							</div>
+							<div class="bg"><img src="images/main3.png" alt="main3"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="text">
+								<div class="text_inner">
+									<h3>BEANPOLE</h3>
+									<h2>HERITAGE STORY</h2>
+									<p>어제, 오늘, 그리고 내일의 이야기를 담은 아카이브 공간입니다.</p>	
+								</div>
+							</div>
+							<div class="bg"><img src="images/main4.jpg" alt="main4"></div>
+						</div>
+					</div>
+				</div>
+				<div class="controller">
+					<div class="inner">
+						<ul>
+							<li><a href="" class="prev">previous</a></li>
+							<li><a href="" class="next">next</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="pagination">
+					<div class="inner">
+						<ul>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="page1" class="sub">
+			<div class="text">
+				<div class="inner">
+					<h2>HERITAGE</h2>
+					<p>
+						빈폴이 가진 오랜 역사, <br>
+						그리고 변함없는 빈폴의 가치
+					</p>
+					<ul>
+						<li><a href="">HISTORY</a></li>
+						<li><a href="">PHILOSOPHY</a></li>
+						<li><a href="">THE ESSENTIAL</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="bg"></div>
+		</section>
+		<section id="page2" class="sub">
+			<div class="text">
+				<div class="inner">
+					<h2>BRANDS</h2>
+					<p>
+						시대를 아우르는 클래식,
+						타임리스 캐주얼 웨어
+					</p>
+					<ul>
+						<li><a href="">MEN</a></li>
+						<li><a href="">LADIES</a></li>
+						<li><a href="">KIDS</a></li> <br>
+					</ul>	
+					<ul>
+						<li><a href="">ACCESSORY</a></li>
+						<li><a href="">GOLF</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="bg"></div>
+		</section>
+		<section id="page3" class="sub">
+			<div class="text">
+				<div class="inner">
+					<div class="right">
+						<h2>JOURNAL</h2>
+						<p>
+							우리가 빈폴을 입는 이유
+						</p>
+						<ul>
+							<li><a href="">BRANDS STORY</a></li>
+							<li><a href="">COLLABORATION</a></li>
+						</ul>	
+						<ul>
+							<li><a href="">STYLE SNAPS</a></li>
+							<li><a href="">CLASSIC MASTERY</a></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+			<div class="bg"></div>
+		</section>
+		<section id="page4" class="sub last">
+			<div class="text">
+				<div class="inner">
+					<h2>GOOD ACTIVITY</h2>
+					<p>
+						좋은 옷을 더 오래 입는 방법
+					</p>
+					<ul>
+						<li><a href="">GOOD CARE</a></li>
+						<li><a href="">GOOD CYCLE</a></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="bg"></div>
+			<div class="footer">
+				<div class="top">
+					<div class="left">
+						<strong>STORE</strong>
+					<ul>
+						<li><a href="">MEN</a></li>
+						<li><a href="">LADIES</a></li>
+						<li><a href="">KIDS</a></li>
+						<li><a href="">ACCESSORY</a></li>
+						<li><a href="">GOLF</a></li>
+					</ul>
+					</div>
+					<div class="right"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+				</div>
+				<div class="bottom">
+					<div class="left">
+						<div class="ft_logo"><a href="">ft_logo</a></div>
+						<ul>
+							<li>삼성물산 (주) 패션부문</li>
+							<li>서울특별시 강남구 남부순환로 2806(도곡동)</li>
+							<li>대표 : 오세철 외 2명 | 사업자 등록번호 : 101-85-43600</li>
+						</ul>
+						<p>Copyright (C) 2023 Samsung C&T Corporation. All rights reserved</p>
+					</div>
+					<div class="right">TOP</div>
+
+				</div>
+			</div>
+		</section>
+</body>
+</html>
